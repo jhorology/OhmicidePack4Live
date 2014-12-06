@@ -16,6 +16,47 @@
 						<key>Actions</key>
 						<array>
 							<dict>
+								<key>Conditions</key>
+								<dict>
+									<key>ConditionList</key>
+									<array>
+										<dict>
+											<key>ConditionType</key>
+											<string>Modifiers</string>
+											<key>ModifiersDown</key>
+											<integer>256</integer>
+											<key>ModifiersUp</key>
+											<integer>0</integer>
+										</dict>
+									</array>
+									<key>ConditionListMatch</key>
+									<string>All</string>
+								</dict>
+								<key>ElseActions</key>
+								<array/>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>IfThenElse</string>
+								<key>ThenActions</key>
+								<array>
+									<dict>
+										<key>Action</key>
+										<string>BreakFromLoop</string>
+										<key>IsActive</key>
+										<true/>
+										<key>IsDisclosed</key>
+										<true/>
+										<key>MacroActionType</key>
+										<string>Cancel</string>
+									</dict>
+								</array>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+							<dict>
 								<key>AllWindows</key>
 								<true/>
 								<key>AlreadyActivatedActionType</key>
@@ -56,7 +97,7 @@
 								<key>Fuzz</key>
 								<integer>15</integer>
 								<key>HorizontalPositionExpression</key>
-								<string>522</string>
+								<string>1182</string>
 								<key>IsActive</key>
 								<true/>
 								<key>IsDisclosed</key>
@@ -68,13 +109,13 @@
 								<key>MouseDrag</key>
 								<string>None</string>
 								<key>Relative</key>
-								<string>Absolute</string>
+								<string>Screen</string>
 								<key>RelativeCorner</key>
 								<string>TopLeft</string>
 								<key>RestoreMouseLocation</key>
 								<true/>
 								<key>VerticalPositionExpression</key>
-								<string>34</string>
+								<string>32</string>
 							</dict>
 							<dict>
 								<key>Action</key>
@@ -92,7 +133,7 @@
 								<key>Fuzz</key>
 								<integer>15</integer>
 								<key>HorizontalPositionExpression</key>
-								<string>1594</string>
+								<string>1185</string>
 								<key>IsActive</key>
 								<true/>
 								<key>IsDisclosed</key>
@@ -104,61 +145,13 @@
 								<key>MouseDrag</key>
 								<string>None</string>
 								<key>Relative</key>
-								<string>Absolute</string>
+								<string>Screen</string>
 								<key>RelativeCorner</key>
 								<string>TopLeft</string>
 								<key>RestoreMouseLocation</key>
 								<true/>
 								<key>VerticalPositionExpression</key>
-								<string>37</string>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<false/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.5</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>Action</key>
-								<string>Click</string>
-								<key>Button</key>
-								<integer>0</integer>
-								<key>ClickCount</key>
-								<integer>1</integer>
-								<key>DisplayMatches</key>
-								<false/>
-								<key>DragHorizontalPosition</key>
-								<string>0</string>
-								<key>DragVerticalPosition</key>
-								<string>0</string>
-								<key>Fuzz</key>
-								<integer>15</integer>
-								<key>HorizontalPositionExpression</key>
-								<string>1603</string>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<false/>
-								<key>MacroActionType</key>
-								<string>MouseMoveAndClick</string>
-								<key>Modifiers</key>
-								<integer>0</integer>
-								<key>MouseDrag</key>
-								<string>None</string>
-								<key>Relative</key>
-								<string>Absolute</string>
-								<key>RelativeCorner</key>
-								<string>TopLeft</string>
-								<key>RestoreMouseLocation</key>
-								<true/>
-								<key>VerticalPositionExpression</key>
-								<string>125</string>
+								<string>122</string>
 							</dict>
 							<dict>
 								<key>IsActive</key>
@@ -188,7 +181,7 @@
 								<key>Fuzz</key>
 								<integer>15</integer>
 								<key>HorizontalPositionExpression</key>
-								<string>726</string>
+								<string>92</string>
 								<key>IsActive</key>
 								<true/>
 								<key>IsDisclosed</key>
@@ -200,13 +193,13 @@
 								<key>MouseDrag</key>
 								<string>None</string>
 								<key>Relative</key>
-								<string>Screen</string>
+								<string>Window</string>
 								<key>RelativeCorner</key>
 								<string>TopLeft</string>
 								<key>RestoreMouseLocation</key>
 								<false/>
 								<key>VerticalPositionExpression</key>
-								<string>289</string>
+								<string>58</string>
 							</dict>
 							<dict>
 								<key>IsActive</key>
@@ -298,9 +291,23 @@
 								<key>MacroActionType</key>
 								<string>Pause</string>
 								<key>Time</key>
-								<string>1</string>
+								<string>1.5</string>
 								<key>TimeOutAbortsMacro</key>
 								<true/>
+							</dict>
+							<dict>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>KeyCode</key>
+								<integer>53</integer>
+								<key>MacroActionType</key>
+								<string>SimulateKeystroke</string>
+								<key>Modifiers</key>
+								<integer>0</integer>
+								<key>ReleaseAll</key>
+								<false/>
 							</dict>
 							<dict>
 								<key>Action</key>
@@ -327,55 +334,16 @@
 								<true/>
 								<key>IsDisclosed</key>
 								<false/>
-								<key>KeyCode</key>
-								<integer>53</integer>
-								<key>MacroActionType</key>
-								<string>SimulateKeystroke</string>
-								<key>Modifiers</key>
-								<integer>0</integer>
-								<key>ReleaseAll</key>
-								<false/>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<false/>
 								<key>MacroActionType</key>
 								<string>Pause</string>
 								<key>Time</key>
-								<string>1</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>AllWindows</key>
-								<true/>
-								<key>AlreadyActivatedActionType</key>
-								<string>Normal</string>
-								<key>Application</key>
-								<dict>
-									<key>BundleIdentifier</key>
-									<string>com.ableton.live</string>
-									<key>Name</key>
-									<string>Ableton Live 9 Beta</string>
-									<key>NewFile</key>
-									<string>/Applications/Ableton Live 9 Beta.app</string>
-								</dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<false/>
-								<key>MacroActionType</key>
-								<string>ActivateApplication</string>
-								<key>ReopenWindows</key>
-								<false/>
+								<string>1.5</string>
 								<key>TimeOutAbortsMacro</key>
 								<true/>
 							</dict>
 							<dict>
 								<key>Action</key>
-								<string>MoveAndClick</string>
+								<string>Click</string>
 								<key>Button</key>
 								<integer>0</integer>
 								<key>ClickCount</key>
@@ -389,7 +357,7 @@
 								<key>Fuzz</key>
 								<integer>15</integer>
 								<key>HorizontalPositionExpression</key>
-								<string>522</string>
+								<string>111</string>
 								<key>IsActive</key>
 								<true/>
 								<key>IsDisclosed</key>
@@ -405,57 +373,29 @@
 								<key>RelativeCorner</key>
 								<string>TopLeft</string>
 								<key>RestoreMouseLocation</key>
-								<false/>
+								<true/>
 								<key>VerticalPositionExpression</key>
-								<string>34</string>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<false/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.5</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
+								<string>479</string>
 							</dict>
 							<dict>
 								<key>Action</key>
-								<string>MoveAndClick</string>
-								<key>Button</key>
-								<integer>0</integer>
-								<key>ClickCount</key>
-								<integer>1</integer>
-								<key>DisplayMatches</key>
-								<false/>
-								<key>DragHorizontalPosition</key>
-								<string>0</string>
-								<key>DragVerticalPosition</key>
-								<string>0</string>
-								<key>Fuzz</key>
-								<integer>15</integer>
-								<key>HorizontalPositionExpression</key>
-								<string>406</string>
+								<string>CaseSensitiveString</string>
 								<key>IsActive</key>
 								<true/>
 								<key>IsDisclosed</key>
 								<false/>
 								<key>MacroActionType</key>
-								<string>MouseMoveAndClick</string>
-								<key>Modifiers</key>
-								<integer>0</integer>
-								<key>MouseDrag</key>
-								<string>None</string>
-								<key>Relative</key>
-								<string>Window</string>
-								<key>RelativeCorner</key>
-								<string>TopLeft</string>
-								<key>RestoreMouseLocation</key>
+								<string>SearchReplaceClipboard</string>
+								<key>Replace</key>
+								<string></string>
+								<key>Search</key>
+								<string>.tfx</string>
+								<key>TargetNamedClipboardRedundantDisplayName</key>
+								<string>Default Clipboard</string>
+								<key>TargetNamedClipboardUID</key>
+								<string>6746BE20-A230-4E83-915A-1042F73C5D70</string>
+								<key>TargetUseNamedClipboard</key>
 								<false/>
-								<key>VerticalPositionExpression</key>
-								<string>475</string>
 							</dict>
 							<dict>
 								<key>IsActive</key>
@@ -491,7 +431,7 @@
 								<key>MacroActionType</key>
 								<string>Pause</string>
 								<key>Time</key>
-								<string>0.5</string>
+								<string>0.2</string>
 								<key>TimeOutAbortsMacro</key>
 								<true/>
 							</dict>
@@ -517,103 +457,7 @@
 								<key>MacroActionType</key>
 								<string>Pause</string>
 								<key>Time</key>
-								<string>0.5</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>Action</key>
-								<string>MoveAndClick</string>
-								<key>Button</key>
-								<integer>0</integer>
-								<key>ClickCount</key>
-								<integer>1</integer>
-								<key>DisplayMatches</key>
-								<false/>
-								<key>DragHorizontalPosition</key>
-								<string>0</string>
-								<key>DragVerticalPosition</key>
-								<string>0</string>
-								<key>Fuzz</key>
-								<integer>15</integer>
-								<key>HorizontalPositionExpression</key>
-								<string>675</string>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<false/>
-								<key>MacroActionType</key>
-								<string>MouseMoveAndClick</string>
-								<key>Modifiers</key>
-								<integer>0</integer>
-								<key>MouseDrag</key>
-								<string>None</string>
-								<key>Relative</key>
-								<string>Window</string>
-								<key>RelativeCorner</key>
-								<string>TopLeft</string>
-								<key>RestoreMouseLocation</key>
-								<false/>
-								<key>VerticalPositionExpression</key>
-								<string>481</string>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<false/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.5</string>
-								<key>TimeOutAbortsMacro</key>
-								<true/>
-							</dict>
-							<dict>
-								<key>Action</key>
-								<string>MoveAndClick</string>
-								<key>Button</key>
-								<integer>0</integer>
-								<key>ClickCount</key>
-								<integer>1</integer>
-								<key>DisplayMatches</key>
-								<false/>
-								<key>DragHorizontalPosition</key>
-								<string>0</string>
-								<key>DragVerticalPosition</key>
-								<string>0</string>
-								<key>Fuzz</key>
-								<integer>15</integer>
-								<key>HorizontalPositionExpression</key>
-								<string>580</string>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<false/>
-								<key>MacroActionType</key>
-								<string>MouseMoveAndClick</string>
-								<key>Modifiers</key>
-								<integer>0</integer>
-								<key>MouseDrag</key>
-								<string>None</string>
-								<key>Relative</key>
-								<string>Window</string>
-								<key>RelativeCorner</key>
-								<string>TopLeft</string>
-								<key>RestoreMouseLocation</key>
-								<false/>
-								<key>VerticalPositionExpression</key>
-								<string>475</string>
-							</dict>
-							<dict>
-								<key>IsActive</key>
-								<true/>
-								<key>IsDisclosed</key>
-								<false/>
-								<key>MacroActionType</key>
-								<string>Pause</string>
-								<key>Time</key>
-								<string>0.5</string>
+								<string>0.2</string>
 								<key>TimeOutAbortsMacro</key>
 								<true/>
 							</dict>
@@ -633,7 +477,7 @@
 								<key>Fuzz</key>
 								<integer>15</integer>
 								<key>HorizontalPositionExpression</key>
-								<string>1594</string>
+								<string>291</string>
 								<key>IsActive</key>
 								<true/>
 								<key>IsDisclosed</key>
@@ -645,13 +489,13 @@
 								<key>MouseDrag</key>
 								<string>None</string>
 								<key>Relative</key>
-								<string>Absolute</string>
+								<string>Window</string>
 								<key>RelativeCorner</key>
 								<string>TopLeft</string>
 								<key>RestoreMouseLocation</key>
 								<true/>
 								<key>VerticalPositionExpression</key>
-								<string>37</string>
+								<string>477</string>
 							</dict>
 							<dict>
 								<key>IsActive</key>
@@ -661,13 +505,13 @@
 								<key>MacroActionType</key>
 								<string>Pause</string>
 								<key>Time</key>
-								<string>0.5</string>
+								<string>0.3</string>
 								<key>TimeOutAbortsMacro</key>
 								<true/>
 							</dict>
 							<dict>
 								<key>Action</key>
-								<string>MoveAndClick</string>
+								<string>Click</string>
 								<key>Button</key>
 								<integer>0</integer>
 								<key>ClickCount</key>
@@ -681,7 +525,7 @@
 								<key>Fuzz</key>
 								<integer>15</integer>
 								<key>HorizontalPositionExpression</key>
-								<string>1587</string>
+								<string>190</string>
 								<key>IsActive</key>
 								<true/>
 								<key>IsDisclosed</key>
@@ -693,13 +537,13 @@
 								<key>MouseDrag</key>
 								<string>None</string>
 								<key>Relative</key>
-								<string>Absolute</string>
+								<string>Window</string>
 								<key>RelativeCorner</key>
 								<string>TopLeft</string>
 								<key>RestoreMouseLocation</key>
-								<false/>
+								<true/>
 								<key>VerticalPositionExpression</key>
-								<string>125</string>
+								<string>472</string>
 							</dict>
 							<dict>
 								<key>IsActive</key>
@@ -709,7 +553,91 @@
 								<key>MacroActionType</key>
 								<string>Pause</string>
 								<key>Time</key>
-								<string>1.5</string>
+								<string>0.1</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
+							<dict>
+								<key>Action</key>
+								<string>Click</string>
+								<key>Button</key>
+								<integer>0</integer>
+								<key>ClickCount</key>
+								<integer>1</integer>
+								<key>DisplayMatches</key>
+								<false/>
+								<key>DragHorizontalPosition</key>
+								<string>0</string>
+								<key>DragVerticalPosition</key>
+								<string>0</string>
+								<key>Fuzz</key>
+								<integer>15</integer>
+								<key>HorizontalPositionExpression</key>
+								<string>1166</string>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>MouseMoveAndClick</string>
+								<key>Modifiers</key>
+								<integer>0</integer>
+								<key>MouseDrag</key>
+								<string>None</string>
+								<key>Relative</key>
+								<string>Screen</string>
+								<key>RelativeCorner</key>
+								<string>TopLeft</string>
+								<key>RestoreMouseLocation</key>
+								<true/>
+								<key>VerticalPositionExpression</key>
+								<string>28</string>
+							</dict>
+							<dict>
+								<key>Action</key>
+								<string>Click</string>
+								<key>Button</key>
+								<integer>0</integer>
+								<key>ClickCount</key>
+								<integer>1</integer>
+								<key>DisplayMatches</key>
+								<false/>
+								<key>DragHorizontalPosition</key>
+								<string>0</string>
+								<key>DragVerticalPosition</key>
+								<string>0</string>
+								<key>Fuzz</key>
+								<integer>15</integer>
+								<key>HorizontalPositionExpression</key>
+								<string>1167</string>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>MouseMoveAndClick</string>
+								<key>Modifiers</key>
+								<integer>0</integer>
+								<key>MouseDrag</key>
+								<string>None</string>
+								<key>Relative</key>
+								<string>Screen</string>
+								<key>RelativeCorner</key>
+								<string>TopLeft</string>
+								<key>RestoreMouseLocation</key>
+								<true/>
+								<key>VerticalPositionExpression</key>
+								<string>128</string>
+							</dict>
+							<dict>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>Pause</string>
+								<key>Time</key>
+								<string>3</string>
 								<key>TimeOutAbortsMacro</key>
 								<true/>
 							</dict>
@@ -735,7 +663,7 @@
 								<key>MacroActionType</key>
 								<string>Pause</string>
 								<key>Time</key>
-								<string>1.5</string>
+								<string>0.5</string>
 								<key>TimeOutAbortsMacro</key>
 								<true/>
 							</dict>
@@ -765,9 +693,57 @@
 								<key>TimeOutAbortsMacro</key>
 								<true/>
 							</dict>
+							<dict>
+								<key>Action</key>
+								<string>Click</string>
+								<key>Button</key>
+								<integer>0</integer>
+								<key>ClickCount</key>
+								<integer>1</integer>
+								<key>DisplayMatches</key>
+								<false/>
+								<key>DragHorizontalPosition</key>
+								<string>0</string>
+								<key>DragVerticalPosition</key>
+								<string>0</string>
+								<key>Fuzz</key>
+								<integer>15</integer>
+								<key>HorizontalPositionExpression</key>
+								<string>1115</string>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>MouseMoveAndClick</string>
+								<key>Modifiers</key>
+								<integer>0</integer>
+								<key>MouseDrag</key>
+								<string>None</string>
+								<key>Relative</key>
+								<string>Screen</string>
+								<key>RelativeCorner</key>
+								<string>TopLeft</string>
+								<key>RestoreMouseLocation</key>
+								<true/>
+								<key>VerticalPositionExpression</key>
+								<string>152</string>
+							</dict>
+							<dict>
+								<key>IsActive</key>
+								<true/>
+								<key>IsDisclosed</key>
+								<false/>
+								<key>MacroActionType</key>
+								<string>Pause</string>
+								<key>Time</key>
+								<string>1</string>
+								<key>TimeOutAbortsMacro</key>
+								<true/>
+							</dict>
 						</array>
 						<key>CountExpression</key>
-						<string>79</string>
+						<string>86</string>
 						<key>IsActive</key>
 						<true/>
 						<key>IsDisclosed</key>
@@ -781,7 +757,7 @@
 				<key>IsActive</key>
 				<true/>
 				<key>ModificationDate</key>
-				<real>438382539.31719899</real>
+				<real>439545584.35663497</real>
 				<key>Name</key>
 				<string>OhmicideLiveConversion</string>
 				<key>Triggers</key>
